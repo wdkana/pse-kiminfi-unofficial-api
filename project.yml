@@ -1,5 +1,0 @@
-packages:
-  - name: api
-    actions:
-      - name: main
-        runtime: "nodejs:default"
