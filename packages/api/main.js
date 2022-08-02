@@ -473,14 +473,16 @@ function main(args) {
   console.info('serverless running to collect data => ', args)
   const { data, limits, pageCount, pages, total } = paginate(option == "asing" ? asing : option == "domestik" ? domestik : err, limit, page);
   return {
-    data,
-    option: option,
-    meta: {
-      page: {
-        currentPage: pages,
-        perPage: limits,
-        total: total,
-        pageCount: pageCount,
+    body: {
+      data,
+      option: option,
+      meta: {
+        page: {
+          currentPage: pages,
+          perPage: limits,
+          total: total,
+          pageCount: pageCount,
+        }
       }
     }
   }
