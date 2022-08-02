@@ -433,10 +433,10 @@ const asing = {
 };
 
 const paginate = (asing, limit, page) => {
-  const totalData = parseInt(asing.data.length)
+  const totalData = parseInt(asing.data.length + 1)
   let limits = parseInt(limit)
 
-  const pageCount = Math.ceil(totalData / limits);
+  const pageCount = parseInt(Math.ceil(totalData / limits));
 
   let pages = parseInt(page);
   if (pages > pageCount) pages = pageCount;
