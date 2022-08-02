@@ -1,5 +1,5 @@
 packages:
   - name: api
     actions:
-      - name: pse-kiminfi-unofficial-api
+      - name: main
         runtime: "nodejs:default"
