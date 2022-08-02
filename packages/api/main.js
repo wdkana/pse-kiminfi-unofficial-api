@@ -468,8 +468,8 @@ const err = {
   ]
 }
 
-function main(option) {
-  const { limit, page } = option
+function main(args) {
+  const { limit, page, option } = args
   const { data, limits, pageCount, pages, total } = paginate(option == "asing" ? asing : option == "domestik" ? domestik : err, limit, page);
   return {
     data,
