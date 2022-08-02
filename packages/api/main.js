@@ -470,6 +470,7 @@ const err = {
 
 function main(args) {
   const { limit, page, option } = args
+  console.info('serverless running to collect data => ', args)
   const { data, limits, pageCount, pages, total } = paginate(option == "asing" ? asing : option == "domestik" ? domestik : err, limit, page);
   return {
     data,
