@@ -1,4 +1,2 @@
-.deployed/
-.deployed
-node_modules/
-node_modules
+/.deployed
+/node_modules
