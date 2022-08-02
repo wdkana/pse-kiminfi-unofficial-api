@@ -1,0 +1,11 @@
+{
+  "name": "kiminfi-api",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest --coverage --runInBand --forceExit --verbose false"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
